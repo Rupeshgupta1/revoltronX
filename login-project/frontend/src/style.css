@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  header h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .button-group {
+    margin-bottom: 30px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #e67e22;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  
+  .form button {
+    padding: 10px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #2ecc71;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 0.9em;
+    text-align: left;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.4s ease forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.4s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+  }
